@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Birthday Note</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <main class="container">
+    <header class="header">
+      <img id="personPhoto" class="photo" alt="Birthday person photo" />
+      <h1 id="headline">Happy Birthday!</h1>
+      <p id="subtext" class="subtext"></p>
+    </header>
+
+    <section class="card">
+      <div class="cardTitleRow">
+        <h2>Countdown!!!!</h2>
+        <span id="countdownLabel" class="label"></span>
+      </div>
+
+      <div class="countdown">
+        <div class="timeBox"><div id="days" class="num">0</div><div class="cap">Days</div></div>
+        <div class="timeBox"><div id="hours" class="num">0</div><div class="cap">Hours</div></div>
+        <div class="timeBox"><div id="minutes" class="num">0</div><div class="cap">Minutes</div></div>
+        <div class="timeBox"><div id="seconds" class="num">0</div><div class="cap">Seconds</div></div>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2 id="messageTitle"></h2>
+      <p id="messageBody" class="message"></p>
+    </section>
+
+    <section class="card">
+      <h2>About you: </h2>
+      <ul id="notesList" class="notes"></ul>
+    </section>
+
+    <section id="extraNote" class="card hidden">
+      <h2>One more note</h2>
+      <p id="extraNoteText" class="message"></p>
+    </section>
+
+   <footer class="footer">
+  <button id="confettiBtn" class="btn">Confetti</button>
+
+  <div class="noteLock">
+    <button id="extraNoteBtn" class="btn secondary" disabled>
+      Additional note 🔒
+    </button>
+    <p id="noteLockText" class="lockText">
+      Only accessible on the day of the birthday
+    </p>
+  </div>
+</footer>
+
+  </main>
+
+  <script src="config.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
